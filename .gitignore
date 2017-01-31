@@ -1,0 +1,12 @@
+Pods/
+Podfile.lock
+xcuserdata/
+*.xcworkspace/
+DerivedData/
+.DS_Store
+*.pem
+build/
+*.[oa]
+*~.nib
+*.swp
+*~
