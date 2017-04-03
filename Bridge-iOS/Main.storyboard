@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E189a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UI6-hH-PpW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Logs-->
+        <scene sceneID="eQg-JY-UIi">
+            <objects>
+                <viewController id="bsm-zZ-Zsv" customClass="BridgeLogViewController" customModule="Bridge_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V7s-ct-i7x"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ziz-eo-Vbz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oEK-2Y-x8e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mrK-rg-ZU0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mrK-rg-ZU0" firstAttribute="top" secondItem="V7s-ct-i7x" secondAttribute="bottom" id="7fe-cw-sdc"/>
+                            <constraint firstAttribute="trailing" secondItem="mrK-rg-ZU0" secondAttribute="trailing" id="FoG-lS-Iy7"/>
+                            <constraint firstItem="Ziz-eo-Vbz" firstAttribute="top" secondItem="mrK-rg-ZU0" secondAttribute="bottom" id="NsF-8g-Z0A"/>
+                            <constraint firstItem="mrK-rg-ZU0" firstAttribute="leading" secondItem="oEK-2Y-x8e" secondAttribute="leading" id="gKN-Qx-7Df"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Logs" id="tzT-nK-Azk"/>
+                    <connections>
+                        <outlet property="logTextView" destination="mrK-rg-ZU0" id="hIO-02-2UQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rR-Nu-njG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1927.2" y="45.42728635682159"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hKt-a0-F8j">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UI6-hH-PpW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6sI-7w-46w">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="T5c-wu-8Er" kind="relationship" relationship="viewControllers" id="00o-Jr-Uy7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xeG-p6-hZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="45.42728635682159"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="K3I-Gy-NhH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5c-wu-8Er" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="cjc-bc-TCn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FUU-Qx-s7z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bsm-zZ-Zsv" kind="relationship" relationship="rootViewController" id="aHq-C8-Nkw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="599-yO-pYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="45.42728635682159"/>
+        </scene>
+    </scenes>
+</document>

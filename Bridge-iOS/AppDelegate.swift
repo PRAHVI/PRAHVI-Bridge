@@ -2,20 +2,30 @@
 //  AppDelegate.swift
 //  Bridge
 //
-//  Created by Blake Tsuzaki on 1/30/17.
+//  Created by Blake Tsuzaki on 4/3/17.
 //  Copyright © 2017 PRAHVI. All rights reserved.
 //
 
 import UIKit
+import Bridge
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var bridgeCoordinator: BridgeCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let bridgeCoordinator = BridgeCoordinator()
+        
+        bridgeCoordinator.startService { (success, error) in
+            if success {
+                print("yay")
+            }
+        }
+        
         return true
     }
 
