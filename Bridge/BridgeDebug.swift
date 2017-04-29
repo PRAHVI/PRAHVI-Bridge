@@ -8,21 +8,31 @@
 
 import Foundation
 
+public enum BridgeDebugMessageType {
+    case notification, error
+}
+
+public struct BridgeDebugMessage {
+    public var message: String
+    public var type: BridgeDebugMessageType
+}
+
+protocol BridgeDebugDelegate {
+    func didPrintMessage(object: BridgeDebugMessage)
+}
+
 class BridgeDebug: NSObject {
-    class func log(_ items: Any..., separator: String = " ", terminator: String = "\n") {
-        var printout = items
-        if let str = printout[0] as? String {
-            printout[0] = "[Bridge-Log]" + str
-        }
-        
-        print(printout, separator:separator, terminator: terminator)
+    private let errorPrefix = "[Bridge ⚠️] "
+    private let notifPrefix = "[Bridge 💬] "
+    
+    var delegate: BridgeDebugDelegate?
+    
+    func log(_ message: String, separator: String = " ", terminator: String = "\n") {
+        print(notifPrefix, message, separator:separator, terminator: terminator)
+        delegate?.didPrintMessage(object: BridgeDebugMessage(message: notifPrefix.appending(message), type: .notification))
     }
-    class func err(_ items: Any..., separator: String = " ", terminator: String = "\n") {
-        var printout = items
-        if let str = printout[0] as? String {
-            printout[0] = "[Bridge-Error]" + str
-        }
-        
-        print(printout, separator:separator, terminator: terminator)
+    func err(_ message: String, separator: String = " ", terminator: String = "\n") {
+        print(errorPrefix, message, separator:separator, terminator: terminator)
+        delegate?.didPrintMessage(object: BridgeDebugMessage(message: errorPrefix.appending(message), type: .error))
     }
 }

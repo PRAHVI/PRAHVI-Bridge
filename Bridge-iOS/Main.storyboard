@@ -1,51 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E189a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UI6-hH-PpW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F60a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UI6-hH-PpW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Logs-->
-        <scene sceneID="eQg-JY-UIi">
-            <objects>
-                <viewController id="bsm-zZ-Zsv" customClass="BridgeLogViewController" customModule="Bridge_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="V7s-ct-i7x"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ziz-eo-Vbz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oEK-2Y-x8e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mrK-rg-ZU0">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="mrK-rg-ZU0" firstAttribute="top" secondItem="V7s-ct-i7x" secondAttribute="bottom" id="7fe-cw-sdc"/>
-                            <constraint firstAttribute="trailing" secondItem="mrK-rg-ZU0" secondAttribute="trailing" id="FoG-lS-Iy7"/>
-                            <constraint firstItem="Ziz-eo-Vbz" firstAttribute="top" secondItem="mrK-rg-ZU0" secondAttribute="bottom" id="NsF-8g-Z0A"/>
-                            <constraint firstItem="mrK-rg-ZU0" firstAttribute="leading" secondItem="oEK-2Y-x8e" secondAttribute="leading" id="gKN-Qx-7Df"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Logs" id="tzT-nK-Azk"/>
-                    <connections>
-                        <outlet property="logTextView" destination="mrK-rg-ZU0" id="hIO-02-2UQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4rR-Nu-njG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1927.2" y="45.42728635682159"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hKt-a0-F8j">
             <objects>
@@ -58,17 +21,18 @@
                     </tabBar>
                     <connections>
                         <segue destination="T5c-wu-8Er" kind="relationship" relationship="viewControllers" id="00o-Jr-Uy7"/>
+                        <segue destination="qwI-JJ-twH" kind="relationship" relationship="viewControllers" id="bCL-Jd-Kt5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xeG-p6-hZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48.799999999999997" y="45.42728635682159"/>
+            <point key="canvasLocation" x="31" y="45"/>
         </scene>
-        <!--Item-->
+        <!--Logs-->
         <scene sceneID="K3I-Gy-NhH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5c-wu-8Er" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cjc-bc-TCn"/>
+                    <tabBarItem key="tabBarItem" title="Logs" id="cjc-bc-TCn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FUU-Qx-s7z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -76,12 +40,112 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="bsm-zZ-Zsv" kind="relationship" relationship="rootViewController" id="aHq-C8-Nkw"/>
+                        <segue destination="q4n-cv-1cl" kind="relationship" relationship="rootViewController" id="m1r-5g-Xc0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="599-yO-pYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="45.42728635682159"/>
+            <point key="canvasLocation" x="814" y="45"/>
+        </scene>
+        <!--Bridge Log View Controller-->
+        <scene sceneID="jmJ-Ut-qE9">
+            <objects>
+                <viewController id="q4n-cv-1cl" customClass="BridgeLogViewController" customModule="Bridge_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TEy-8I-g6L"/>
+                        <viewControllerLayoutGuide type="bottom" id="slr-We-j5J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qdn-1Q-Zv6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-Qm-AJG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wVg-Qm-AJG" firstAttribute="leading" secondItem="qdn-1Q-Zv6" secondAttribute="leading" id="aGb-r1-kZ9"/>
+                            <constraint firstAttribute="trailing" secondItem="wVg-Qm-AJG" secondAttribute="trailing" id="gFk-hi-aih"/>
+                            <constraint firstItem="wVg-Qm-AJG" firstAttribute="top" secondItem="qdn-1Q-Zv6" secondAttribute="top" id="peS-pu-mqG"/>
+                            <constraint firstAttribute="bottom" secondItem="wVg-Qm-AJG" secondAttribute="bottom" id="zwk-bi-apa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YxE-qh-dGm">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="9zB-aR-2Lg">
+                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="All"/>
+                                <segment title="Error"/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="wVg-Qm-AJG" id="z8H-bZ-7yh"/>
+                        <outlet property="typeSelector" destination="9zB-aR-2Lg" id="nS8-nc-4QU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bE7-yH-bCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630" y="45"/>
+        </scene>
+        <!--Bridge Capture View Controller-->
+        <scene sceneID="Wo1-2x-uKn">
+            <objects>
+                <viewController id="nTs-aI-lae" customClass="BridgeCaptureViewController" customModule="Bridge_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jRF-BC-xcp"/>
+                        <viewControllerLayoutGuide type="bottom" id="SjF-6i-zqV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hdg-DF-FnB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2KI-c9-WLB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2KI-c9-WLB" firstAttribute="leading" secondItem="hdg-DF-FnB" secondAttribute="leading" id="Uu8-n3-h1X"/>
+                            <constraint firstItem="2KI-c9-WLB" firstAttribute="top" secondItem="jRF-BC-xcp" secondAttribute="bottom" id="XI5-Ig-CRT"/>
+                            <constraint firstItem="SjF-6i-zqV" firstAttribute="top" secondItem="2KI-c9-WLB" secondAttribute="bottom" id="fmI-oP-7Hg"/>
+                            <constraint firstAttribute="trailing" secondItem="2KI-c9-WLB" secondAttribute="trailing" id="hWZ-QB-EHa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tE9-W9-rjU"/>
+                    <connections>
+                        <outlet property="imageView" destination="2KI-c9-WLB" id="Du2-bM-xxM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPt-Zg-W6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629.5999999999999" y="716.49175412293857"/>
+        </scene>
+        <!--Live-->
+        <scene sceneID="yar-pp-js7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qwI-JJ-twH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Live" id="T6h-dT-W64"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="toP-fw-iRy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nTs-aI-lae" kind="relationship" relationship="rootViewController" id="1Sy-AX-P8w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBb-Cy-dWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="717"/>
         </scene>
     </scenes>
 </document>

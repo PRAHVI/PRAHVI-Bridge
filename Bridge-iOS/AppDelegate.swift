@@ -7,24 +7,20 @@
 //
 
 import UIKit
-import Bridge
+
+struct BridgeGlobal {
+    static let bridgeCoordinator = BridgeCoordinator()
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var bridgeCoordinator: BridgeCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let bridgeCoordinator = BridgeCoordinator()
-        
-        bridgeCoordinator.startService { (success, error) in
-            if success {
-                print("yay")
-            }
-        }
+        BridgeGlobal.bridgeCoordinator.startCommunication()
         
         return true
     }

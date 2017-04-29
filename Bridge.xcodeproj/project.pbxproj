@@ -16,8 +16,14 @@
 		126DD0971E92B76A00CFF7DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126DD0961E92B76A00CFF7DD /* AppDelegate.swift */; };
 		126DD0991E92B77000CFF7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126DD0981E92B77000CFF7DD /* Assets.xcassets */; };
 		126DD09A1E92B78800CFF7DD /* BridgeDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120D60A81E92A7F6007263CC /* BridgeDebug.swift */; };
-		126DD09B1E92B78A00CFF7DD /* BridgeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D62AAE1E5689B700FB85A5 /* BridgeCoordinator.swift */; };
-		BDBB97DB21CC7753E6E1DEBE /* Pods_Bridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E36601431F155A4F1C9DD8 /* Pods_Bridge.framework */; };
+		126DD09B1E92B78A00CFF7DD /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D62AAE1E5689B700FB85A5 /* Bridge.swift */; };
+		12A4364E1E92C55100661343 /* BridgeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A4364D1E92C55100661343 /* BridgeCoordinator.swift */; };
+		12A436501E92C58A00661343 /* BridgeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A4364F1E92C58900661343 /* BridgeConstants.swift */; };
+		12A436521E92D26500661343 /* BridgeImageCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A436511E92D26500661343 /* BridgeImageCapture.swift */; };
+		12A4365C1E93560C00661343 /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A4365B1E93560B00661343 /* Receiver.swift */; };
+		12D792531EB28119005DF10D /* BridgeCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D792521EB28119005DF10D /* BridgeCaptureViewController.swift */; };
+		1B5CB72033459A4082809EF1 /* Pods_Bridge_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198C13FB2BD686935F39F86F /* Pods_Bridge_iOS.framework */; };
+		7FEC4F2ED20026E68FA0B4F9 /* Pods_Bridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E36601431F155A4F1C9DD8 /* Pods_Bridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0437D7968C331CEBAA5DB368 /* Pods-Bridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge/Pods-Bridge.release.xcconfig"; sourceTree = "<group>"; };
 		120D60A81E92A7F6007263CC /* BridgeDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeDebug.swift; sourceTree = "<group>"; };
 		126DD0631E92B65700CFF7DD /* Bridge-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bridge-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		126DD0751E92B6A500CFF7DD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,10 +63,17 @@
 		126DD0941E92B76200CFF7DD /* BridgeLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeLogViewController.swift; sourceTree = "<group>"; };
 		126DD0961E92B76A00CFF7DD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		126DD0981E92B77000CFF7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		12D62AAE1E5689B700FB85A5 /* BridgeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeCoordinator.swift; sourceTree = "<group>"; };
+		12A4364D1E92C55100661343 /* BridgeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeCoordinator.swift; sourceTree = "<group>"; };
+		12A4364F1E92C58900661343 /* BridgeConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeConstants.swift; sourceTree = "<group>"; };
+		12A436511E92D26500661343 /* BridgeImageCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeImageCapture.swift; sourceTree = "<group>"; };
+		12A4365B1E93560B00661343 /* Receiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receiver.swift; sourceTree = "<group>"; };
+		12D62AAE1E5689B700FB85A5 /* Bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		12D792521EB28119005DF10D /* BridgeCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeCaptureViewController.swift; sourceTree = "<group>"; };
+		198C13FB2BD686935F39F86F /* Pods_Bridge_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bridge_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA7769237F2C8862E20B480 /* Pods-Bridge-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge-iOS/Pods-Bridge-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		39E36601431F155A4F1C9DD8 /* Pods_Bridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C0AC475BBDE1A4962DE5FCF /* Pods-Bridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge/Pods-Bridge.debug.xcconfig"; sourceTree = "<group>"; };
-		AF9E01F2FE98255926C6F5A7 /* Pods-Bridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge/Pods-Bridge.release.xcconfig"; sourceTree = "<group>"; };
+		9F91BBB25CE3E68753CD0BF0 /* Pods-Bridge-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge-iOS/Pods-Bridge-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E290EBBD1360B8291B29437B /* Pods-Bridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge/Pods-Bridge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				126DD0831E92B6C300CFF7DD /* Bridge.framework in Frameworks */,
+				1B5CB72033459A4082809EF1 /* Pods_Bridge_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDBB97DB21CC7753E6E1DEBE /* Pods_Bridge.framework in Frameworks */,
+				7FEC4F2ED20026E68FA0B4F9 /* Pods_Bridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				126DD0961E92B76A00CFF7DD /* AppDelegate.swift */,
+				12A4364F1E92C58900661343 /* BridgeConstants.swift */,
+				12A4364D1E92C55100661343 /* BridgeCoordinator.swift */,
+				12A436511E92D26500661343 /* BridgeImageCapture.swift */,
 				126DD0941E92B76200CFF7DD /* BridgeLogViewController.swift */,
+				12D792521EB28119005DF10D /* BridgeCaptureViewController.swift */,
 				126DD0981E92B77000CFF7DD /* Assets.xcassets */,
 				126DD0901E92B73700CFF7DD /* Main.storyboard */,
 				126DD0921E92B74B00CFF7DD /* LaunchScreen.storyboard */,
@@ -119,7 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				126DD07E1E92B6C300CFF7DD /* Bridge.h */,
-				12D62AAE1E5689B700FB85A5 /* BridgeCoordinator.swift */,
+				12D62AAE1E5689B700FB85A5 /* Bridge.swift */,
+				12A4365B1E93560B00661343 /* Receiver.swift */,
 				120D60A81E92A7F6007263CC /* BridgeDebug.swift */,
 				126DD07F1E92B6C300CFF7DD /* Info.plist */,
 			);
@@ -130,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				39E36601431F155A4F1C9DD8 /* Pods_Bridge.framework */,
+				198C13FB2BD686935F39F86F /* Pods_Bridge_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,8 +158,10 @@
 		D2271ABE8B7F7C1DEE84BE43 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6C0AC475BBDE1A4962DE5FCF /* Pods-Bridge.debug.xcconfig */,
-				AF9E01F2FE98255926C6F5A7 /* Pods-Bridge.release.xcconfig */,
+				2EA7769237F2C8862E20B480 /* Pods-Bridge-iOS.debug.xcconfig */,
+				9F91BBB25CE3E68753CD0BF0 /* Pods-Bridge-iOS.release.xcconfig */,
+				E290EBBD1360B8291B29437B /* Pods-Bridge.debug.xcconfig */,
+				0437D7968C331CEBAA5DB368 /* Pods-Bridge.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -161,10 +184,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 126DD0721E92B65700CFF7DD /* Build configuration list for PBXNativeTarget "Bridge-iOS" */;
 			buildPhases = (
+				00466936EC27A422E6116021 /* [CP] Check Pods Manifest.lock */,
 				126DD05F1E92B65700CFF7DD /* Sources */,
 				126DD0601E92B65700CFF7DD /* Frameworks */,
 				126DD0611E92B65700CFF7DD /* Resources */,
 				126DD0881E92B6C300CFF7DD /* Embed Frameworks */,
+				93C61AE4131D211D43205073 /* [CP] Embed Pods Frameworks */,
+				D415B88FF5F564608D676FAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,12 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 126DD0851E92B6C300CFF7DD /* Build configuration list for PBXNativeTarget "Bridge" */;
 			buildPhases = (
-				69A189096FF0D48A6E463D0A /* [CP] Check Pods Manifest.lock */,
+				ADD87333E3CB3567ED2F90F4 /* [CP] Check Pods Manifest.lock */,
 				126DD0771E92B6C300CFF7DD /* Sources */,
 				126DD0781E92B6C300CFF7DD /* Frameworks */,
 				126DD0791E92B6C300CFF7DD /* Headers */,
 				126DD07A1E92B6C300CFF7DD /* Resources */,
-				55BF6EE98A1843290528FC85 /* [CP] Copy Pods Resources */,
+				B11AE04D603FFD38699A45F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,22 +285,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		55BF6EE98A1843290528FC85 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bridge/Pods-Bridge-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		69A189096FF0D48A6E463D0A /* [CP] Check Pods Manifest.lock */ = {
+		00466936EC27A422E6116021 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,6 +300,66 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		93C61AE4131D211D43205073 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bridge-iOS/Pods-Bridge-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADD87333E3CB3567ED2F90F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B11AE04D603FFD38699A45F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bridge/Pods-Bridge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D415B88FF5F564608D676FAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bridge-iOS/Pods-Bridge-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -296,7 +367,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D792531EB28119005DF10D /* BridgeCaptureViewController.swift in Sources */,
+				12A4364E1E92C55100661343 /* BridgeCoordinator.swift in Sources */,
 				126DD0971E92B76A00CFF7DD /* AppDelegate.swift in Sources */,
+				12A436521E92D26500661343 /* BridgeImageCapture.swift in Sources */,
+				12A436501E92C58A00661343 /* BridgeConstants.swift in Sources */,
 				126DD0951E92B76200CFF7DD /* BridgeLogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,8 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A4365C1E93560C00661343 /* Receiver.swift in Sources */,
 				126DD09A1E92B78800CFF7DD /* BridgeDebug.swift in Sources */,
-				126DD09B1E92B78A00CFF7DD /* BridgeCoordinator.swift in Sources */,
+				126DD09B1E92B78A00CFF7DD /* Bridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +490,7 @@
 		};
 		126DD0731E92B65700CFF7DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA7769237F2C8862E20B480 /* Pods-Bridge-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -432,6 +509,7 @@
 		};
 		126DD0741E92B65700CFF7DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F91BBB25CE3E68753CD0BF0 /* Pods-Bridge-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -449,7 +527,7 @@
 		};
 		126DD0861E92B6C300CFF7DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C0AC475BBDE1A4962DE5FCF /* Pods-Bridge.debug.xcconfig */;
+			baseConfigurationReference = E290EBBD1360B8291B29437B /* Pods-Bridge.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "";
@@ -475,7 +553,7 @@
 		};
 		126DD0871E92B6C300CFF7DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF9E01F2FE98255926C6F5A7 /* Pods-Bridge.release.xcconfig */;
+			baseConfigurationReference = 0437D7968C331CEBAA5DB368 /* Pods-Bridge.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "";
